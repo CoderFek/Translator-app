@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Translator</h2>
+<form method = "POST" action="{% url 'translate' %}">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type = "submit">Translate</button>
+</form>
+
+{% if translated_text %}
+    <h3>Translated text</h3>
+    <p>{{translated_text}}</p>
+{% endif %}
+{% endblock content %}
