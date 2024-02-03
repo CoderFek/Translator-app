@@ -1,5 +1,5 @@
 from django import forms
-from .models import Translation
+# from .models import Translation
 from .utils import LANGUAGE_SLUGS
 
 class TranslationForm(forms.Form):
