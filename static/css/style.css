@@ -1,0 +1,30 @@
+/* styles.css */
+
+/* Style the text area for source_text */
+textarea#id_source_text {
+    width: 300px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    resize: vertical; /* Allow vertical resizing */
+    overflow-y: auto; /* Enable vertical scroll when needed */
+}
+
+/* Style the select fields for source_language and target_language */
+select#id_source_lang,
+select#id_target_lang {
+    width: 200px; 
+    margin-bottom: 10px; 
+    display: block; 
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
