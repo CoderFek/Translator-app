@@ -26,14 +26,6 @@ def translate_view(request):
                 )
                 translated_text = translation.text
 
-
-                # Translation.objects.create(
-                #     source_text = source_text,
-                #     source_lang_slug = source_lang_slug,
-                #     target_lang_slug = target_lang_slug,
-                #     translated_text = translated_text
-                # )
-
                 new_translation = Translation(
                 source_text=source_text,
                 source_lang_slug=source_lang_slug,
@@ -41,8 +33,8 @@ def translate_view(request):
                 translated_text=translated_text
                 )
                 new_translation.save()
-                # Translation.target_text = translated_text
-                # Translation.save()
+                
+
             except Exception as e:
                 print(f"Error during translation: {e}")
     else:
